@@ -9,27 +9,26 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        //Color de el fondo de pantalla backgroundColor
+        
         backgroundColor: Color.fromARGB(255, 241, 239, 239),
-        //Sirve para alinear a lo que pondremos en forma vertical
+        
         body: Column(
-          //Nos dice que las columnas esten en alineadas en el centro y uno seguido del otro
+          
           mainAxisAlignment: MainAxisAlignment.center,
-          //utilizamos children para darle propiedades unicas a lo que agregamos ya sea texto o imagen
+         
           children: [
             CircleAvatar(
               radius: 60.0,
               backgroundColor: Colors.blue,
               backgroundImage: NetworkImage("https://soft.clbug.com/wp-content/uploads/soft/medical/1615043870.png"),
             ),
-            //Sisebox para poner altura(height) solo para el codigo que esta encima de ellos
-            //En este caso el SizedBox da altura entre la imagen y el Card
+          
             SizedBox(
               height: 90.0,
               
               
             ),
-            //Sirve para dividir por un pequeño espacio
+          
             Divider(
               thickness: 0.70,
               color: Colors.white38,
@@ -38,7 +37,7 @@ class MyApp extends StatelessWidget {
             ),
            
             
-            //Sirve para poner texto o iconos entre recuadros rectangulos
+            
             
             
             Card (
@@ -50,7 +49,7 @@ class MyApp extends StatelessWidget {
                 leading: Icon(Icons.mail),
               ),
             ),
-            //Separa la carta de la otra
+            
             SizedBox(
               width: 50.0,
             ),
@@ -62,11 +61,11 @@ class MyApp extends StatelessWidget {
               color: Colors.white,
               margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 15.0),
               child: ListTile(
-                //Texto que esta encima y es titulo
+                
                 title: Text("Password"),
-                //Texto que esta debajo y es subtitulo
+                
                 subtitle: Text("***"),
-                //Significa que este icono va al comienzo de las letras o lo demas
+                
                 leading: Icon(
                   Icons.lock,
                 ),
